@@ -29,7 +29,7 @@ api.interceptors.response.use(
         return api(originalRequest);
       } catch {
         localStorage.removeItem('access_token');
-        window.location.href = '/loginpage';
+        window.location.href = '/2025skill/loginpage';
       }
     }
     return Promise.reject(err);

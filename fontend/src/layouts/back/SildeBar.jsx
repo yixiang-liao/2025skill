@@ -27,7 +27,7 @@ const MySidebar = ({ onSelect }) => {
 
   const handleLogout = async () => {
     await logout();
-    navigate("/loginpage"); // 根據你的路由，這裡改為小寫 login
+    navigate("/2025skill/loginpage"); // 根據你的路由，這裡改為小寫 login
   };
   return (
     <div style={{ height: "100vh" }} className="my-sidebar">

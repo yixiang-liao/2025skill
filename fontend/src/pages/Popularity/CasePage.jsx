@@ -47,7 +47,7 @@ const CasePage = () => {
       <BasicExample />
       <div className="header">
         <div className="Poster">
-          <img src={`${BASE_URL}${team.poster_img}`} alt="Poster" />
+          <img src={`${BASE_URL}/2025skill/api/${team.poster_img}`} alt="Poster" />
         </div>
         <div className="case-content">
           <h1>{team.project_title}</h1>
@@ -121,14 +121,14 @@ const CasePage = () => {
           作品海報
         </h3>
         <div className="Poster">
-          <img src={`${BASE_URL}${team.poster_img}`} alt="Poster" />
+          <img src={`${BASE_URL}/2025skill/api/${team.poster_img}`} alt="Poster" />
         </div>
         <hr />
         <h3 className="list-title" id="img">
           作品圖片
         </h3>
         <div className="img">
-          <img src={`${BASE_URL}${team.product_img}`} alt="Product" />
+          <img src={`${BASE_URL}/2025skill/api/${team.product_img}`} alt="Product" />
         </div>
       </div>
       <Footer />

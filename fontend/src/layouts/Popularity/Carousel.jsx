@@ -62,7 +62,7 @@ const Carousel = () => {
             <Link to={`/Popularity/CasePage/${slide.team_id}`} style={{ textDecoration: "none", color: "inherit" }}>
               <div className="case">
                 <div className="poster">
-                  <img src={`${BASE_URL}${slide.poster_img}`} alt={slide.project_title} />
+                  <img src={`${BASE_URL}/2025skill/api/${slide.poster_img}`} alt={slide.project_title} />
                 </div>
                 <div className="case-content">
                   <h3>{slide.project_title}</h3>

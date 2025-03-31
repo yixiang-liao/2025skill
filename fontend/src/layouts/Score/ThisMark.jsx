@@ -93,7 +93,7 @@ const ThisMark = () => {
                     <TableCell>{team.team_name}</TableCell>
                     <TableCell>
                       <a
-                        href={`/Popularity/CasePage/${team.id}`}
+                        href={`/2025skill/Popularity/CasePage/${team.id}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ color: "#1976d2", textDecoration: "underline", fontWeight: "bold" }}
