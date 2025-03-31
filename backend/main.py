@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from app.api.v1 import test , excel , teamdata , upload_team_assets  , open ,voteapi , auth ,score
 
-app = FastAPI()
+app = FastAPI(root_path="/2025skill/api")
 
 origins = [
     "http://localhost:5173",  # ← 你的前端開發伺服器
@@ -13,6 +13,7 @@ origins = [
     "http://192.168.28.131:3000",
     "http://127.0.0.1:3000",
     "http://127.0.0.1:8000",
+    "http://127.0.0.1",
 ]
 
 # 跨域設定（根據需求調整）
