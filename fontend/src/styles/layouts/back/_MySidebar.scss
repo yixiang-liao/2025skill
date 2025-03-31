@@ -1,0 +1,29 @@
+.my-sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    opacity: auto;
+    border-right: 1px solid #e0e0e0;
+  .header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0;
+    gap: 10px;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    .title {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  }
+    .user-name{
+      font-size: 1.2em;
+      font-weight: bold;
+      text-align: center;
+    }
+}

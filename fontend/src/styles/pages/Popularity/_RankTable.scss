@@ -1,0 +1,39 @@
+.RankTable {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .content {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 1.2em;
+    .ranking-table {
+      width: 80%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+      }
+
+      tr:hover{
+        background-color: #f1f1f1;
+      }
+
+      th {
+        background-color: #e5e3e3;
+      }
+    }
+  }
+}

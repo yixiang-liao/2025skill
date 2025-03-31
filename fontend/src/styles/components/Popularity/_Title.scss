@@ -1,0 +1,33 @@
+.Title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #4F5052;
+    em {
+      font-size: 0.4em;
+      font-style: normal;
+      display: flex;
+      flex-direction: column;
+      margin: 4px 0 0 10px;
+      font-weight: 700;
+      color: #b0adad;
+      letter-spacing: 1px;
+    }
+    svg {
+      display: inline-block;
+      background: no-repeat scroll center;
+      background-size: 100% auto;
+      width: 23px;
+      height: 23px;
+      text-indent: -9999px;
+      color: #4F5052;
+      margin-bottom: 3px;
+    }
+  }
+}

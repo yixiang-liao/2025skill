@@ -1,0 +1,108 @@
+.Tickets {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  .btn {
+    color: #000000;
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    border-radius: 5px;
+    min-width: 80px;
+    white-space: nowrap;
+    margin-top: 10px;
+  }
+  .btn:hover {
+    border: 1px solid #ccc;
+    background-color: #e8e7e7;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .content {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    .step_title {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      hr {
+        border-top: 2px solid #4f5052;
+        width: 70%;
+        margin-top: 5px;
+      }
+    }
+    .step1-email {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+      width: 100%;
+      .status-box{
+        margin-top: 10px;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        color: #0f6dd2;
+      }
+    }
+    .step2-code {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+      .code-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .step3-vote {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+      width: 100%;
+      input{
+        width: 200px;
+      }
+      .vote-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .vote1{
+        margin: 10px 0;
+      }
+      .vote2{
+        margin-bottom: 10px;
+      }
+      .deparment{
+        margin: 20px 0;
+      }
+      label{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 15px;
+        font-weight: bold;
+        svg{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

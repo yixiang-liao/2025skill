@@ -1,0 +1,126 @@
+.Carousel {
+  // width: 100%;
+  position: relative;
+  max-width: 100vw; // 限制寬度不超過視窗
+  overflow: hidden; // 如有溢出內容就隱藏
+  box-sizing: border-box;
+  
+  .mySwiper {
+    .case {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      // height: 400px;
+      background-color: #f5f5f5;
+      margin: 20px;
+      border-radius: 10px;
+      padding: 10px 0px;
+      
+      .poster {
+        // 預設海報容器可以根據需求設定
+      }
+      
+      .case-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px 0 0 10px;
+        width: 70%;
+        p {
+          text-align: justify;
+          font-size: 1.2em;
+          margin-top: 5px;
+          color: #585656;
+          letter-spacing: 1.5px;
+          line-height: 35px;
+          display: -webkit-box;          /* 設定彈性容器 */
+          -webkit-box-orient: vertical;  /* 垂直排列 */
+          -webkit-line-clamp: 5;         /* 限制最多顯示 5 行 */
+          overflow: hidden;              /* 隱藏超出部分 */
+          text-overflow: ellipsis;       /* 超過部分以 ... 表示 */
+        }
+        h3 {
+          color: #585656;
+          letter-spacing: 1.5px;
+          font-weight: bold;
+        }
+        h4 {
+          color: #585656;
+          letter-spacing: 1.5px;
+          font-weight: bold;
+        }
+      }
+    }
+    
+    /* 隱藏左側箭頭 */
+    .swiper-button-prev {
+      color: #000; /* 可根據設計調整顏色 */
+      width: 40px;
+      height: 40px;
+    }
+  
+    /* 調整右側箭頭 */
+    .swiper-button-next {
+      color: #000; /* 可根據設計調整顏色 */
+      width: 40px;
+      height: 40px;
+    }
+  
+    /* 如需調整海報圖片樣式 */
+    img {
+      width: auto;
+      height: 400px;
+      display: block;
+      border-radius: 10px;
+      border: #e0dddd 1px solid;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .case {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      
+      .poster {
+        margin: 0 auto; // 讓海報容器水平置中
+      }
+      
+      .case-content {
+        display: none;
+        width: 0;
+        p {
+          display: none !important;
+        }
+        h3 {
+          display: none;
+        }
+        h4 {
+          display: none;
+        }
+      }
+      
+      hr {
+        display: none;
+      }
+    }
+    
+    .mySwiper {
+      img {
+        height: 300px;
+        border-radius: 10px;
+      }
+      .case {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        .ppp{
+          display: none;
+        }
+      }
+    }
+  }
+}

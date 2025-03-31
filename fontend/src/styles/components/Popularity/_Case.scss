@@ -1,0 +1,99 @@
+.Case2 {
+  padding: 20px;
+  border: 1px solid #e9eceb;
+  border-radius: 20px 50px 20px 20px;
+  width: 400px;
+  a {
+    // color: #4f5052;
+    text-decoration: none;
+    display: flex;
+    .Poster {
+      margin-right: 10px;
+      img {
+        width: 150px;
+        border-radius: 10px;
+      }
+    }
+    .case-content {
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+      .field {
+        padding: 3px 3px;
+        background-color: #65d9c455;
+        color: #4f5052;
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 0.8em;
+        width: 95px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-size: 1.2em;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #575656;
+        letter-spacing: 1px;
+        display: -webkit-box; /* 設定彈性容器 */
+        -webkit-box-orient: vertical; /* 垂直排列 */
+        -webkit-line-clamp: 1; /* 限制最多顯示 5 行 */
+        overflow: hidden; /* 隱藏超出部分 */
+        text-overflow: ellipsis; /* 超過部分以 ... 表示 */
+      }
+      h4 {
+        font-size: 1em;
+        margin-bottom: 10px;
+        color: #575656;
+        letter-spacing: 1px;
+        display: -webkit-box; /* 設定彈性容器 */
+        -webkit-box-orient: vertical; /* 垂直排列 */
+        -webkit-line-clamp: 1; /* 限制最多顯示 5 行 */
+        overflow: hidden; /* 隱藏超出部分 */
+        text-overflow: ellipsis; /* 超過部分以 ... 表示 */
+      }
+      .ticket-area {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .ticket-icon {
+          margin-right: 10px;
+          svg {
+            font-size: 3em;
+            font-weight: 700;
+            color: #4f5052;
+          }
+        }
+        .ticket {
+          font-size: 2.5em;
+          font-weight: 700;
+          color: #4f5052;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+  .Case2:hover {
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+    // background-color: #e0e1e5;
+    transform: translateY(-5px);
+    transition: all 0.3s;
+  }
+
+@media (max-width: 769px) {
+  .Case2 {
+    width: 100%;
+    a {
+      display: flex;
+      flex-direction: column;
+      .Poster {
+        display: flex;
+        justify-content: center;
+      }
+      .field {
+        margin-top: 10px;
+      }
+    }
+  }
+}

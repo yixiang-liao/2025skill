@@ -1,0 +1,1059 @@
+@charset "UTF-8";
+.Popularity-footer {
+  background-color: #ffe900;
+  padding: 50px 10px 0 10px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  width: 100%;
+}
+.Popularity-footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.Popularity-footer .container .logo {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Popularity-footer .container .logo img {
+  height: 55px;
+  width: auto;
+  margin-right: 20px;
+  padding-right: 20px;
+}
+.Popularity-footer .container .logo .logo-center {
+  border-right: 1px solid #adacac;
+}
+.Popularity-footer .container .footer-text {
+  color: #646464;
+}
+.Popularity-footer .container .footer-text svg {
+  font-size: 1.3em;
+  margin-right: 10px;
+}
+.Popularity-footer .container .footer-text p {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+@media (max-width: 1024px) {
+  .Popularity-footer .container {
+    justify-content: flex-start;
+  }
+  .Popularity-footer .container .logo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .Popularity-footer .container .logo img {
+    max-height: 40px;
+    width: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-bottom: 20px;
+  }
+  .Popularity-footer .container .logo .logo-center {
+    border-right: none;
+  }
+}
+
+.popularity_homepage {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.popularity_homepage .header {
+  max-width: 100vw;
+  width: 100vw;
+}
+.popularity_homepage .content {
+  min-height: 82vh;
+  max-width: 100vw;
+  width: 90%;
+  margin: 20px auto; /* 上方 20px，下方自動，左右置中 */
+  display: flex;
+  flex-direction: column;
+}
+
+.Carousel {
+  position: relative;
+  max-width: 100vw;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.Carousel .mySwiper {
+  /* 隱藏左側箭頭 */
+  /* 調整右側箭頭 */
+  /* 如需調整海報圖片樣式 */
+}
+.Carousel .mySwiper .case {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #f5f5f5;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 10px 0px;
+}
+.Carousel .mySwiper .case .case-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0 0 10px;
+  width: 70%;
+}
+.Carousel .mySwiper .case .case-content p {
+  text-align: justify;
+  font-size: 1.2em;
+  margin-top: 5px;
+  color: #585656;
+  letter-spacing: 1.5px;
+  line-height: 35px;
+  display: -webkit-box; /* 設定彈性容器 */
+  -webkit-box-orient: vertical; /* 垂直排列 */
+  -webkit-line-clamp: 5; /* 限制最多顯示 5 行 */
+  overflow: hidden; /* 隱藏超出部分 */
+  text-overflow: ellipsis; /* 超過部分以 ... 表示 */
+}
+.Carousel .mySwiper .case .case-content h3 {
+  color: #585656;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+.Carousel .mySwiper .case .case-content h4 {
+  color: #585656;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+.Carousel .mySwiper .swiper-button-prev {
+  color: #000; /* 可根據設計調整顏色 */
+  width: 40px;
+  height: 40px;
+}
+.Carousel .mySwiper .swiper-button-next {
+  color: #000; /* 可根據設計調整顏色 */
+  width: 40px;
+  height: 40px;
+}
+.Carousel .mySwiper img {
+  width: auto;
+  height: 400px;
+  display: block;
+  border-radius: 10px;
+  border: #e0dddd 1px solid;
+}
+@media (max-width: 767px) {
+  .Carousel .case {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .Carousel .case .poster {
+    margin: 0 auto;
+  }
+  .Carousel .case .case-content {
+    display: none;
+    width: 0;
+  }
+  .Carousel .case .case-content p {
+    display: none !important;
+  }
+  .Carousel .case .case-content h3 {
+    display: none;
+  }
+  .Carousel .case .case-content h4 {
+    display: none;
+  }
+  .Carousel .case hr {
+    display: none;
+  }
+  .Carousel .mySwiper img {
+    height: 300px;
+    border-radius: 10px;
+  }
+  .Carousel .mySwiper .case {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+  }
+  .Carousel .mySwiper .case .ppp {
+    display: none;
+  }
+}
+
+.Explore {
+  margin-bottom: 30px;
+}
+.Explore .list {
+  color: #4f5052;
+}
+.Explore .list .ulli {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 5px 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.Explore .list .ulli li {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+}
+.Explore .list .ulli li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 15px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  color: #4f5052;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.Explore .list .ulli li a .liicon {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Explore .list .ulli li a .liicon svg {
+  position: relative;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  color: #686767;
+}
+.Explore .list .ulli li a .liicon::after {
+  content: "";
+  width: 70%;
+  height: 70%;
+  background: #f3f3f3;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.Explore .list .ulli li a:hover {
+  border: 1px solid #efefef;
+  background: #f3f3f3;
+}
+.Explore .list .ulli li a:hover .liicon::after {
+  background: white;
+  width: 90%;
+  height: 90%;
+  transition: background-color 0.3s ease 0.1s, width 0.3s ease 0.1s, height 0.3s ease 0.1s;
+}
+@media (max-width: 767px) {
+  .Explore .list .ulli li a {
+    padding: 10px 0px;
+  }
+}
+
+.Title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Title h2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #4F5052;
+}
+.Title h2 em {
+  font-size: 0.4em;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  margin: 4px 0 0 10px;
+  font-weight: 700;
+  color: #b0adad;
+  letter-spacing: 1px;
+}
+.Title h2 svg {
+  display: inline-block;
+  background: no-repeat scroll center;
+  background-size: 100% auto;
+  width: 23px;
+  height: 23px;
+  text-indent: -9999px;
+  color: #4F5052;
+  margin-bottom: 3px;
+}
+
+.CaseBox .header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.CaseBox .header input {
+  padding: 11px 10px;
+  border-radius: 5px;
+  position: relative;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.CaseBox .header button {
+  color: #000000;
+  border: 1px solid #ccc;
+  padding: 11px 10px;
+  border-radius: 5px;
+  min-width: 80px;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+.CaseBox .box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.Case2 {
+  padding: 20px;
+  border: 1px solid #e9eceb;
+  border-radius: 20px 50px 20px 20px;
+  width: 400px;
+}
+.Case2 a {
+  text-decoration: none;
+  display: flex;
+}
+.Case2 a .Poster {
+  margin-right: 10px;
+}
+.Case2 a .Poster img {
+  width: 150px;
+  border-radius: 10px;
+}
+.Case2 a .case-content {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.Case2 a .case-content .field {
+  padding: 3px 3px;
+  background-color: rgba(101, 217, 196, 0.3333333333);
+  color: #4f5052;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  width: 95px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.Case2 a .case-content h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #575656;
+  letter-spacing: 1px;
+  display: -webkit-box; /* 設定彈性容器 */
+  -webkit-box-orient: vertical; /* 垂直排列 */
+  -webkit-line-clamp: 1; /* 限制最多顯示 5 行 */
+  overflow: hidden; /* 隱藏超出部分 */
+  text-overflow: ellipsis; /* 超過部分以 ... 表示 */
+}
+.Case2 a .case-content h4 {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #575656;
+  letter-spacing: 1px;
+  display: -webkit-box; /* 設定彈性容器 */
+  -webkit-box-orient: vertical; /* 垂直排列 */
+  -webkit-line-clamp: 1; /* 限制最多顯示 5 行 */
+  overflow: hidden; /* 隱藏超出部分 */
+  text-overflow: ellipsis; /* 超過部分以 ... 表示 */
+}
+.Case2 a .case-content .ticket-area {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.Case2 a .case-content .ticket-area .ticket-icon {
+  margin-right: 10px;
+}
+.Case2 a .case-content .ticket-area .ticket-icon svg {
+  font-size: 3em;
+  font-weight: 700;
+  color: #4f5052;
+}
+.Case2 a .case-content .ticket-area .ticket {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #4f5052;
+  margin: 0;
+}
+
+.Case2:hover {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  transition: all 0.3s;
+}
+
+@media (max-width: 769px) {
+  .Case2 {
+    width: 100%;
+  }
+  .Case2 a {
+    display: flex;
+    flex-direction: column;
+  }
+  .Case2 a .Poster {
+    display: flex;
+    justify-content: center;
+  }
+  .Case2 a .field {
+    margin-top: 10px;
+  }
+}
+.CasePage {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.CasePage .header {
+  max-width: 100vw;
+  width: 80%;
+  margin: 20px auto; /* 上方 20px，下方自動，左右置中 */
+  display: flex;
+}
+.CasePage .header .Poster {
+  margin-right: 10px;
+}
+.CasePage .header .Poster img {
+  width: 300px;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .CasePage .header .Poster {
+    display: none;
+  }
+}
+.CasePage .header .case-content {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  width: 100%;
+}
+.CasePage .header .case-content .list-group .list-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.CasePage .header .case-content .list-group ul {
+  list-style: none;
+  padding: 0;
+}
+.CasePage .header .case-content .list-group ul li {
+  display: inline;
+}
+.CasePage .header .case-content .list-group ul li:not(:last-child)::after {
+  content: "、";
+  /* 如有需要，可加上 margin 調整間距 */
+  margin: 0 5px;
+}
+.CasePage .header .case-content .field {
+  padding: 3px 3px;
+  background-color: rgba(101, 217, 196, 0.3333333333);
+  color: #4f5052;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  width: 100px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.CasePage .header .case-content h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #575656;
+  letter-spacing: 1px;
+}
+.CasePage .header .case-content h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #575656;
+  letter-spacing: 1px;
+}
+.CasePage .header .case-content h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #575656;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+.CasePage .header .case-content .share-line .share {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+.CasePage .header .case-content .share-line button {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+}
+.CasePage .header .case-content .share-line button svg {
+  font-size: 1.4em;
+}
+.CasePage .header .case-content .share-line .line {
+  color: white;
+  background-color: #00c300;
+}
+.CasePage .header .case-content .share-line .link {
+  color: white;
+  background-color: #4f5052;
+}
+.CasePage .header .case-content .ticket-area {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.CasePage .header .case-content .ticket-area .ticket-icon {
+  margin-right: 10px;
+}
+.CasePage .header .case-content .ticket-area .ticket-icon svg {
+  font-size: 3em;
+  font-weight: 700;
+  color: #4f5052;
+}
+.CasePage .header .case-content .ticket-area .ticket {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #4f5052;
+  margin: 0;
+}
+.CasePage .content {
+  max-width: 100vw;
+  width: 80%;
+  margin: 20px auto; /* 上方 20px，下方自動，左右置中 */
+}
+.CasePage .content h3 {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #575656;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+.CasePage .content p {
+  text-align: justify;
+}
+.CasePage .content .quick-nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #e8e9ec;
+  padding: 20px 0;
+  font-size: 1.3em;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.CasePage .content .quick-nav div a {
+  text-decoration: none;
+  color: #575656;
+  font-weight: bolder;
+  padding: 5px 10px;
+  background-color: #ffe900;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.CasePage .content .quick-nav div:not(:last-child)::after {
+  content: " ╱ ";
+  /* 如有需要，可加上 margin 調整間距 */
+  margin: 0 5px;
+}
+.CasePage .content .Poster {
+  display: flex;
+  justify-content: center;
+}
+.CasePage .content .img {
+  display: flex;
+  justify-content: center;
+}
+.CasePage .content img {
+  width: 600px;
+}
+@media (max-width: 768px) {
+  .CasePage .content img {
+    width: 100%;
+  }
+  .CasePage .content .quick-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .CasePage .content .quick-nav div {
+    margin: 10px;
+  }
+  .CasePage .content .quick-nav div:not(:last-child)::after {
+    content: "";
+    /* 如有需要，可加上 margin 調整間距 */
+    margin: 0px;
+  }
+}
+
+.my-sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  opacity: auto;
+  border-right: 1px solid #e0e0e0;
+}
+.my-sidebar .header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px 0;
+  gap: 10px;
+}
+.my-sidebar .header img {
+  width: 50px;
+  height: 50px;
+}
+.my-sidebar .header .title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.my-sidebar .user-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.team-data {
+  padding: 20px;
+}
+
+.back-container {
+  display: flex;
+  height: 100vh;
+}
+.back-container .sidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  /* 你可以在這裡額外設定背景色、邊框等樣式 */
+  background-color: #fff;
+  border-right: 1px solid #e0e0e0;
+}
+.back-container .content {
+  margin-left: 250px;
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.excel-input {
+  padding: 20px;
+}
+.excel-input .input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 250px;
+  margin-top: 30px;
+}
+.excel-input .input:hover {
+  background-color: #f0f0f0;
+}
+.excel-input .input .excel-icon {
+  margin-right: 8px;
+  color: #207245;
+}
+.excel-input .input svg {
+  width: 50px;
+  height: 50px;
+}
+.excel-input .input .excel-text {
+  font-size: 1.2em;
+  color: #333;
+}
+.excel-input button {
+  margin-top: 8px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #433f3f;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-weight: bold;
+}
+.excel-input button:hover {
+  background-color: #186b3b;
+  color: #ffffff;
+}
+.excel-input .uploadStatus {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.Tickets {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.Tickets .btn {
+  color: #000000;
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  border-radius: 5px;
+  min-width: 80px;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+.Tickets .btn:hover {
+  border: 1px solid #ccc;
+  background-color: #e8e7e7;
+}
+.Tickets .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.Tickets .content {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.Tickets .content .step_title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Tickets .content .step_title hr {
+  border-top: 2px solid #4f5052;
+  width: 70%;
+  margin-top: 5px;
+}
+.Tickets .content .step1-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.Tickets .content .step1-email .status-box {
+  margin-top: 10px;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  color: #0f6dd2;
+}
+.Tickets .content .step2-code {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.Tickets .content .step2-code .code-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Tickets .content .step3-vote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.Tickets .content .step3-vote input {
+  width: 200px;
+}
+.Tickets .content .step3-vote .vote-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Tickets .content .step3-vote .vote1 {
+  margin: 10px 0;
+}
+.Tickets .content .step3-vote .vote2 {
+  margin-bottom: 10px;
+}
+.Tickets .content .step3-vote .deparment {
+  margin: 20px 0;
+}
+.Tickets .content .step3-vote label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.Tickets .content .step3-vote label svg {
+  margin-right: 10px;
+}
+
+.email-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.email-input input {
+  border: none;
+  width: auto;
+  width: 100px;
+  padding: 11px 10px;
+  border-radius: 5px;
+  position: relative;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  margin-right: 5px;
+  width: 200px;
+}
+
+.StepTitle {
+  display: flex;
+  align-items: flex-start;
+}
+.StepTitle .StepTitle__header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.StepTitle .StepTitle__header p {
+  margin: 0;
+  font-size: 1em;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  color: #b0adad;
+}
+.StepTitle .StepTitle__header svg {
+  margin: 0;
+  font-size: 1.5em;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  color: #b0adad;
+  margin-right: 10px;
+}
+.StepTitle h3 {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #4f5052;
+  letter-spacing: 1px;
+}
+
+.code-input-wrapper {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+.code-input-wrapper .code-input {
+  width: 40px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.RankTable {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.RankTable .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.RankTable .content {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 1.2em;
+}
+.RankTable .content .ranking-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.RankTable .content .ranking-table th,
+.RankTable .content .ranking-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+.RankTable .content .ranking-table tr:hover {
+  background-color: #f1f1f1;
+}
+.RankTable .content .ranking-table th {
+  background-color: #e5e3e3;
+}
+
+.vote-time-config {
+  padding: 20px;
+}
+.vote-time-config button {
+  margin-top: 8px;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.UserHistory {
+  padding: 20px;
+}
+
+.AdminRankTable {
+  padding: 20px;
+}
+
+.Members {
+  padding: 20px;
+}
+
+.RoleManagement {
+  padding: 20px;
+}
+
+.login-page {
+  height: 100vh;
+  width: 100%;
+  background-image: url("@/assets/oiebg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.login-page .login-container {
+  position: relative;
+  z-index: 2;
+  width: 600px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: white;
+  background-color: #ffdc97;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 10px;
+}
+.login-page .login-container img {
+  width: 300px;
+  margin-bottom: 30px;
+}
+.login-page .login-container h1 {
+  font-size: 1.8em;
+}
+.login-page .login-container h2 {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+.login-page .login-container h1, .login-page .login-container h2 {
+  text-align: center;
+  color: #4f5052;
+  letter-spacing: 2px;
+}
+.login-page .login-container input,
+.login-page .login-container button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+.login-page .login-container button {
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+.login-page .login-container .Copyright {
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #4f5052;
+}
+
+.ChangePassword {
+  padding: 20px;
+}
+
+.Mark {
+  padding: 10px;
+}
+
+.this-mark {
+  padding: 10px;
+}
+
+.AllReviewer {
+  padding: 20px;
+}
+
+.total-score {
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */

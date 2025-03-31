@@ -1,0 +1,15 @@
+.vote-time-config{
+    padding: 20px;
+    button {
+      margin-top: 8px;
+      border-radius: 4px;
+      // background-color: #ffffff;
+      color: #ffffff;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      // font-weight: bold;
+      // &:hover {
+      //   background-color: #e0e0e0;
+      // }
+    }
+}

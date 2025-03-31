@@ -1,0 +1,77 @@
+.login-page {
+  height: 100vh;
+  width: 100%;
+  background-image: url("@/assets/oiebg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
+  // 遮罩層
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0; // top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5); // 半透明黑色遮罩
+    z-index: 1;
+  }
+  .login-container {
+    position: relative;
+    z-index: 2;
+    width: 600px;
+    max-width: 600px;
+    margin: 0 auto;
+    color: white;
+    background-color: #ffdc97;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+
+    img{
+        width: 300px;
+        margin-bottom: 30px;
+    }
+
+    h1{
+        font-size: 1.8em;
+    }
+
+    h2{
+        font-size: 1.5em;
+        margin-top: 10px;
+    }
+
+    h1,h2 {
+      text-align: center;
+      color: #4f5052;
+      letter-spacing: 2px;
+    }
+
+    input,
+    button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+    }
+    button {
+      background: #4caf50;
+      color: white;
+      cursor: pointer;
+    }
+
+    .Copyright {
+      margin-top: 20px;
+      font-size: 0.8em;
+      color: #4f5052;
+    }
+  }
+}
