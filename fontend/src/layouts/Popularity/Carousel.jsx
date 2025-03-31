@@ -59,7 +59,7 @@ const Carousel = () => {
         {slides.map((slide) => (
           <SwiperSlide key={slide.team_id}>
             {/* ✅ 點擊導向該 team 的專題頁面 */}
-            <Link to={`/Popularity/CasePage/${slide.team_id}`} style={{ textDecoration: "none", color: "inherit" }}>
+            <Link to={`/2025skill/Popularity/CasePage/${slide.team_id}`} style={{ textDecoration: "none", color: "inherit" }}>
               <div className="case">
                 <div className="poster">
                   <img src={`${BASE_URL}/2025skill/api/${slide.poster_img}`} alt={slide.project_title} />
