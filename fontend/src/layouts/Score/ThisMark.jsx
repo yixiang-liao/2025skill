@@ -26,11 +26,11 @@ const ThisMark = () => {
     const fetchData = async () => {
       try {
         // 取得所有隊伍
-        const teamRes = await axios.get(`${BASE_URL}/api/v1/teams/summary`);
+        const teamRes = await axios.get(`${BASE_URL}api/v1/teams/summary`);
         setTeams(teamRes.data);
 
         // 取得目前登入者評分紀錄
-        const scoreRes = await axios.get(`${BASE_URL}/api/v1/scores/by-user/me`, {
+        const scoreRes = await axios.get(`${BASE_URL}api/v1/scores/by-user/me`, {
           headers: { Authorization: `Bearer ${token}` },
         });
 

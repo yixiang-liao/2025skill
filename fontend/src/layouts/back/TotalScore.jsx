@@ -27,7 +27,7 @@ const TotalScore = () => {
   useEffect(() => {
     const fetchScores = async () => {
       try {
-        const res = await axios.get(`${BASE_URL}/api/v1/scores/team-ranking`, {
+        const res = await axios.get(`${BASE_URL}api/v1/scores/team-ranking`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setScores(res.data);

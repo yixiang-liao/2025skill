@@ -14,7 +14,7 @@ const Carousel = () => {
   const [slides, setSlides] = useState([]);
 
   useEffect(() => {
-    fetch(`${BASE_URL}/api/v1/open/random`)
+    fetch(`${BASE_URL}api/v1/open/random`)
       .then((res) => res.json())
       .then((data) => setSlides(data))
       .catch((err) => console.error("載入輪播資料失敗", err));

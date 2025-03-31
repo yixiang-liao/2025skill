@@ -10,7 +10,7 @@ const SearchableSelect = ({ onSelect, label = '選擇隊伍' }) => {
   useEffect(() => {
     const fetchOptions = async () => {
       try {
-        const res = await fetch(`${BASE_URL}/api/v1/teams/summary`);
+        const res = await fetch(`${BASE_URL}api/v1/teams/summary`);
         const data = await res.json();
         const mapped = data.map((team) => ({
           value: team.id,

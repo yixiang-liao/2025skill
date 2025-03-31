@@ -11,7 +11,7 @@ const RankTable = () => {
 
   useEffect(() => {
     axios
-      .get(`${BASE_URL}/api/v1/ranking`)
+      .get(`${BASE_URL}api/v1/ranking`)
       .then((res) => setRankingData(res.data))
       .catch((err) => console.error("載入排名資料失敗", err));
   }, []);

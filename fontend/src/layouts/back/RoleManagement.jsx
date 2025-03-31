@@ -50,7 +50,7 @@ const RoleManagement = () => {
 
   const fetchUsers = () => {
     axios
-      .get(`${BASE_URL}/api/v1/admin/users`, {
+      .get(`${BASE_URL}api/v1/admin/users`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("access_token")}`,
         },
@@ -72,7 +72,7 @@ const RoleManagement = () => {
   const handleDelete = (username) => {
     if (window.confirm(`確定要刪除 ${username} 嗎？`)) {
       axios
-        .delete(`${BASE_URL}/api/v1/admin/delete-user/${username}`, {
+        .delete(`${BASE_URL}api/v1/admin/delete-user/${username}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("access_token")}`,
           },
@@ -87,7 +87,7 @@ const RoleManagement = () => {
     if (newUser.password !== newUser.confirm) return alert("密碼不一致");
 
     axios
-      .post(`${BASE_URL}/api/v1/admin/register`, {
+      .post(`${BASE_URL}api/v1/admin/register`, {
         username: newUser.username,
         password: newUser.password,
         role: newUser.role,

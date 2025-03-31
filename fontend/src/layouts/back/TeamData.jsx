@@ -56,7 +56,7 @@ const TeamData = () => {
 
   const fetchTeams = () => {
     axios
-      .get(`${BASE_URL}/api/v1/teams/summary`, {
+      .get(`${BASE_URL}api/v1/teams/summary`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("access_token")}`,
         },
@@ -85,8 +85,8 @@ const TeamData = () => {
 
     const endpoint =
       dialogType === "poster"
-        ? `/api/v1/teams/${selectedTeam.id}/upload-poster`
-        : `/api/v1/teams/${selectedTeam.id}/upload-image`;
+        ? `${BASE_URL}api/v1/teams/${selectedTeam.id}/upload-poster`
+        : `${BASE_URL}api/v1/teams/${selectedTeam.id}/upload-image`;
 
     try {
       await axios.post(`${BASE_URL}${endpoint}`, formData, {
@@ -114,7 +114,7 @@ const TeamData = () => {
   const handleDelete = async (teamId) => {
     if (!window.confirm("確定要刪除這個隊伍的圖片與海報嗎？")) return;
     try {
-      await axios.delete(`${BASE_URL}/api/v1/teams/${teamId}/assets`, {
+      await axios.delete(`${BASE_URL}api/v1/teams/${teamId}/assets`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("access_token")}`,
         },

@@ -44,7 +44,7 @@ const UserHistory = () => {
 
   useEffect(() => {
     axios
-      .get(`${BASE_URL}/api/v1/admin/vote/history`, {
+      .get(`${BASE_URL}api/v1/admin/vote/history`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("access_token")}`,
         },

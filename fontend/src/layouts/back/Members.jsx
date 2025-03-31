@@ -39,7 +39,7 @@ const Members = () => {
 
   useEffect(() => {
     axios
-      .get(`${BASE_URL}/api/v1/teams/members`, {
+      .get(`${BASE_URL}api/v1/teams/members`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("access_token")}`,
         },

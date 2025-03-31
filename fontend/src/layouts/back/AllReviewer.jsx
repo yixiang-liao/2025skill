@@ -30,8 +30,8 @@ const AllReviewer = () => {
     const fetchData = async () => {
       try {
         const [teamRes, scoreRes] = await Promise.all([
-          axios.get(`${BASE_URL}/api/v1/teams/summary`),
-          axios.get(`${BASE_URL}/api/v1/scores/reviewer-all`, {
+          axios.get(`${BASE_URL}api/v1/teams/summary`),
+          axios.get(`${BASE_URL}api/v1/scores/reviewer-all`, {
             headers: { Authorization: `Bearer ${token}` },
           }),
         ]);
@@ -59,7 +59,7 @@ const AllReviewer = () => {
 
   const handleDownload = async () => {
     try {
-      const res = await axios.get(`${BASE_URL}/api/v1/scores/reviewer-export`, {
+      const res = await axios.get(`${BASE_URL}api/v1/scores/reviewer-export`, {
         headers: { Authorization: `Bearer ${token}` },
         responseType: "blob",
       });

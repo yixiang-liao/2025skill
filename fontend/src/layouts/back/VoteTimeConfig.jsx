@@ -32,7 +32,7 @@ const VoteTimeConfig = () => {
 
   const fetchConfig = async () => {
     try {
-      const res = await axios.get(`${BASE_URL}/api/v1/vote/config`);
+      const res = await axios.get(`${BASE_URL}api/v1/vote/config`);
       const { start_time, end_time } = res.data;
 
       // 轉為台北時間
@@ -57,7 +57,7 @@ const VoteTimeConfig = () => {
 
     try {
       await axios.post(
-        `${BASE_URL}/api/v1/vote/config`,
+        `${BASE_URL}api/v1/vote/config`,
         {
           start_time: start.toISOString(),
           end_time: end.toISOString(),

@@ -33,8 +33,8 @@ const Mark = () => {
         }
 
         const [teamRes, scoreRes] = await Promise.all([
-          axios.get(`${BASE_URL}/api/v1/teams/summary`),
-          axios.get(`${BASE_URL}/api/v1/scores/by-user/me`, {
+          axios.get(`${BASE_URL}api/v1/teams/summary`),
+          axios.get(`${BASE_URL}api/v1/scores/by-user/me`, {
             headers: { Authorization: `Bearer ${token}` },
           }),
         ]);
@@ -96,8 +96,8 @@ const Mark = () => {
       innovation: score.innovation,
     };
 
-    const postUrl = `${BASE_URL}/api/v1/scores/score`;
-    const putUrl = `${BASE_URL}/api/v1/scores/${score.id}`;
+    const postUrl = `${BASE_URL}api/v1/scores/score`;
+    const putUrl = `${BASE_URL}api/v1/scores/${score.id}`;
     const endpoint = score.submitted ? putUrl : postUrl;
     const method = score.submitted ? "put" : "post";
 

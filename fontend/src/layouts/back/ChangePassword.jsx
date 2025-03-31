@@ -28,7 +28,7 @@ const ChangePassword = () => {
     }
 
     try {
-      await axios.post(`${BASE_URL}/api/v1/change-password`, {
+      await axios.post(`${BASE_URL}api/v1/change-password`, {
         old_password: form.old_password,
         new_password: form.new_password
       }, {

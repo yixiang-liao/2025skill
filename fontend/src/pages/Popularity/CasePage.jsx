@@ -35,7 +35,7 @@ const CasePage = () => {
 
   useEffect(() => {
     axios
-      .get(`${BASE_URL}/api/v1/open/team/${id}`)
+      .get(`${BASE_URL}api/v1/open/team/${id}`)
       .then((res) => setTeam(res.data))
       .catch((err) => console.error("取得隊伍資料失敗", err));
   }, [id]);

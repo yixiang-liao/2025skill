@@ -10,7 +10,7 @@ const CaseBox = ({ themeCode }) => {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    axios.get(`${BASE_URL}/api/v1/open/theme?code=${themeCode}`)
+    axios.get(`${BASE_URL}api/v1/open/theme?code=${themeCode}`)
       .then((res) => setData(res.data))
       .catch((err) => console.error("載入資料失敗", err));
   }, [themeCode]);

@@ -39,7 +39,7 @@ const AdminRankTable = () => {
 
   useEffect(() => {
     axios
-      .get(`${BASE_URL}/api/v1/ranking`)
+      .get(`${BASE_URL}api/v1/ranking`)
       .then((res) => setRows(res.data))
       .catch((err) => console.error("取得排名資料失敗", err));
   }, []);

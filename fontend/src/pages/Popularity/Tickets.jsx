@@ -43,7 +43,7 @@ const Tickets = () => {
 
     try {
       const response = await fetch(
-        `${BASE_URL}/api/v1/status/${userId}`
+        `${BASE_URL}api/v1/status/${userId}`
       );
       if (!response.ok) {
         throw new Error("查詢失敗");
@@ -53,7 +53,7 @@ const Tickets = () => {
       setmessage(data.message);
 
       // 從後端取來的 vote_start / vote_end 是 UTC，要轉為台北時間
-      const voteTimeRes = await fetch(`${BASE_URL}/api/v1/vote/config`);
+      const voteTimeRes = await fetch(`${BASE_URL}api/v1/vote/config`);
       if (voteTimeRes.ok) {
         const timeData = await voteTimeRes.json();
         setVoteStart(dayjs.utc(timeData.start_time).tz("Asia/Taipei"));
@@ -72,7 +72,7 @@ const Tickets = () => {
     }
 
     try {
-      const response = await fetch(`${BASE_URL}/api/v1/verify`, {
+      const response = await fetch(`${BASE_URL}api/v1/verify`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -104,7 +104,7 @@ const Tickets = () => {
     }
 
     try {
-      const response = await fetch(`${BASE_URL}/api/v1/vote`, {
+      const response = await fetch(`${BASE_URL}api/v1/vote`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
