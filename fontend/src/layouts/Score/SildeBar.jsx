@@ -38,7 +38,7 @@ const MySidebar = ({ onSelect }) => {
 
   const handleLogout = async () => {
     await logout();
-    navigate("/2025skill/loginpage"); // 根據你的路由，這裡改為小寫 login
+    navigate("/loginpage"); // 根據你的路由，這裡改為小寫 login
   };
 
   const handleOpenRankDialog = () => setOpenDialog(true);

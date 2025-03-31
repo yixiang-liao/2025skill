@@ -11,7 +11,7 @@ function BasicExample() {
       className="bg-body-tertiary"
     >
       <Container>
-        <Navbar.Brand href="/2025skill/Popularity/home">
+        <Navbar.Brand href="/Popularity/home">
           {/* <img
               alt=""
               src="/"
@@ -24,9 +24,9 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/2025skill/Popularity/home">作品總覽</Nav.Link>
-            <Nav.Link href="/2025skill/Popularity/Tickets">我要投票</Nav.Link>
-            <Nav.Link href="/2025skill/Popularity/RankTable">即時排名</Nav.Link>
+            <Nav.Link href="/Popularity/home">作品總覽</Nav.Link>
+            <Nav.Link href="/Popularity/Tickets">我要投票</Nav.Link>
+            <Nav.Link href="/Popularity/RankTable">即時排名</Nav.Link>
             <Nav.Link href="#link">使用教學</Nav.Link>
             <Nav.Link
               href="https://sites.google.com/nkust.edu.tw/2024exskex/%E9%A6%96%E9%A0%81?authuser=2"

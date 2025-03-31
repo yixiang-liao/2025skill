@@ -6,7 +6,7 @@ export default function LogoutButton() {
 
   const handleLogout = async () => {
     await logout();
-    navigate('/2025skill/loginpage');
+    navigate('/loginpage');
   };
 
   return <button onClick={handleLogout}>登出</button>;

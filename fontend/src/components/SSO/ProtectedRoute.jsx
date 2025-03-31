@@ -23,7 +23,7 @@ const ProtectedRoute = ({ children, allowedRoles }) => {
   }, [allowedRoles]);
 
   if (loading) return <div>載入中...</div>;
-  if (!user) return <Navigate to="/2025skill/loginpage" replace />;
+  if (!user) return <Navigate to="/loginpage" replace />;
   return children;
 };
 

@@ -12,12 +12,12 @@ import ScoreBack from '../pages/Score/ScoreBack';
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/2025skill/Popularity/home" element={<HomePage />} />
-      <Route path="/2025skill/Popularity/CasePage/:id" element={<CasePage />} />
-      <Route path="/2025skill/Popularity/Tickets" element={<Tickets />} />
-      <Route path="/2025skill/Popularity/RankTable" element={<RankTable />} />
+      <Route path="/Popularity/home" element={<HomePage />} />
+      <Route path="/Popularity/CasePage/:id" element={<CasePage />} />
+      <Route path="/Popularity/Tickets" element={<Tickets />} />
+      <Route path="/Popularity/RankTable" element={<RankTable />} />
       <Route
-        path="/2025skill/back"
+        path="/back"
         element={
           <ProtectedRoute allowedRoles={['admin', 'user']}>
             <Back />
@@ -25,14 +25,14 @@ const AppRoutes = () => {
         }
       />
       <Route
-        path="/2025skill/ScoreBack"
+        path="/ScoreBack"
         element={
           <ProtectedRoute allowedRoles={['reviewer']}>
             <ScoreBack />
           </ProtectedRoute>
         }
       />
-      <Route path="/2025skill/loginpage" element={<LoginPage />} />
+      <Route path="/loginpage" element={<LoginPage />} />
     </Routes>
   );
 };
